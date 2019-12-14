@@ -778,9 +778,9 @@ def draw():
     fill(250)
     rect(width-width/6-10,40+height/12,width/6,height-(40+height/12)*2)
     fill(0)
-    textSize(int(width*12/500))
+    textSize(int(width*11/500))
     #We add the clarifying text field.
-    text("Welcome!\n\nMake the cube turn by moving the mouse. Press the spacebar to pause cube movement.\n\nThe left button changes the perspective mode. The other buttons turn the cube's sides.",width-10-width/6,60+height/12,width/6,height-(40+height/12)*2)
+    text("Welcome!\n\nMake the cube turn by moving the mouse. Press the spacebar to pause cube movement.\n\nThe left button changes the perspective mode. The other buttons turn the cube's sides.",width-10-width/6,80+height/12,width/6,height-(40+height/12)*2)
     stroke(0)
     textSize(int(width*24/500))
     strokeWeight(4)
