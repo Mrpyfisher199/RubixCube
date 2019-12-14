@@ -794,12 +794,12 @@ def draw():
     fill(200,tone[6])
     rect(width/12+10,10,width/12,height/12)
     line(width/12+10,10,width/12+10,height/12+10)
-    if RUB.perspectiveTurn:
+        if RUB.perspectiveTurn:
         textBox(width/12+10,10,"Up")
         textBox(10,10,"U")
         fill(unhex("FF"+RUB.turnWithOrientation("D",False,False)))
     else:
-        textBox(width/12+10,10,"W")
+        textBox(width/12+10,10,"Wp")
         textBox(10,10,"W")
         fill(unhex("FF"+RUB.c["Y"]))
     rect(width/2-width/12,10,width/6,height/12)
@@ -813,7 +813,7 @@ def draw():
         textBox(width/2-width/12,10,"D")
         fill(unhex("FF"+RUB.turnWithOrientation("F",False,False)))
     else:
-        textBox(width/2,10,"Y")
+        textBox(width/2,10,"Yp")
         textBox(width/2-width/12,10,"Y")
         fill(unhex("FF"+RUB.c["G"]))
     rect(width-10-width/6,10,width/6,height/12)
@@ -827,7 +827,7 @@ def draw():
         textBox(width-10-width/6,10,"F")
         fill(unhex("FF"+RUB.turnWithOrientation("B",False,False)))
     else:
-        textBox(width-10-width/6+width/12,10,"G")
+        textBox(width-10-width/6+width/12,10,"Gp")
         textBox(width-10-width/6,10,"G")
         fill(unhex("FF"+RUB.c["B"]))
     rect(10,height-10-height/12,width/6,height/12)
@@ -841,7 +841,7 @@ def draw():
         textBox(10,height-10-height/12,"B")
         fill(unhex("FF"+RUB.turnWithOrientation("R",False,False)))
     else:
-        textBox(width/12+10,height-10-height/12,"B")
+        textBox(width/12+10,height-10-height/12,"Bp")
         textBox(10,height-10-height/12,"B")
         fill(unhex("FF"+RUB.c["R"]))
     rect(width/2-width/12,height-10-height/12,width/6,height/12)
@@ -855,7 +855,7 @@ def draw():
         textBox(width/2-width/12,height-10-height/12,"R")
         fill(unhex("FF"+RUB.turnWithOrientation("L",False,False)))
     else:
-        textBox(width/2,height-10-height/12,"R")
+        textBox(width/2,height-10-height/12,"Rp")
         textBox(width/2-width/12,height-10-height/12,"R")
         fill(unhex("FF"+RUB.c["O"]))
     rect(width-10-width/6,height-height/12-10,width/6,height/12)
@@ -868,7 +868,7 @@ def draw():
         textBox(width-10-width/6+width/12,height-10-height/12,"Lp")
         textBox(width-10-width/6,height-10-height/12,"L")
     else:
-        textBox(width-10-width/6+width/12,height-10-height/12,"O")
+        textBox(width-10-width/6+width/12,height-10-height/12,"Op")
         textBox(width-10-width/6,height-10-height/12,"O")
     #We make sure we actually want to move the cube around with the mouse.
     if RUB.move:
