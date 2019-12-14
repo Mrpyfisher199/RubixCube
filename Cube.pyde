@@ -1,5 +1,5 @@
 #I, Maximilian Latysh, am the creator of this program. 
-#Yes, the Russian who lives in Costa Rica, can solve rubiks cubes, and will soon become a unicyclist.
+#Yes, the kid who lives in Costa Rica, can barely solve rubiks cubes under 30 seconds, and will soon become a unicyclist.
 import random
 
 def setup():
